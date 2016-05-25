@@ -1,0 +1,28 @@
+﻿.homepage-bg-img {
+    height: 1072px;
+    z-index: -19;
+    max-width: none;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    background-attachment: fixed;
+    background-image: url(/Assets/Images/salartracks.jpg);
+    background-size: cover;
+
+    @media screen and (max-width: 544pxx) { 
+        background-position-y: 0;
+    }
+
+    @media screen and (min-width: 992px) {
+        background-position-y: -150px;
+    }
+
+    @media screen and (min-width: 1200px){
+        background-position-y: -200px;
+    }
+}

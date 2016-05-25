@@ -1,0 +1,25 @@
+﻿body {
+    display: flex;
+    min-height: 100vh;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+
+.page-wrapper {
+    -ms-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+}
+
+.header-big-text {
+    width: 10em;
+    font-size: $display4-size;
+    font-weight:bold;
+    text-align: center;
+    text-shadow: $text-shadow-std;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5em;
+    color: gold;
+}

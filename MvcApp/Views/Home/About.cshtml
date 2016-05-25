@@ -1,0 +1,108 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+
+
+<div class="row p-t-3 p-b-3">
+    <div class="col-md-12">
+        <h2>@ViewBag.Title</h2>
+
+        <div class="p-b-2">
+            <p>
+                This template / base project has been created to provide a quick starting point for creating a MVC application
+                without wasting time wiring things together and implementing things such as user authentication.
+            </p>
+            <p>
+                It is also to showcase my code. My previous projects have been for other companies and for obvious reasons I'm not able
+                to copy and show that code.
+            </p>
+        </div>
+
+        <h2>Features</h2>
+        <div class="p-t-1">
+            <h4 class="text-light">DRY</h4>
+            <p>
+                An effort has been made to keep this project as DRY (don't repeat yourself) as possible.
+                Using base classes for models in the repository and default properties, so that logic
+                doesn't have to be repeated.
+            </p>
+            <p>
+                Generic repository methods for CRUD (create, read, update delete), so that
+                when a new entity/table is added, these methods don't need to be recreated.
+            </p>
+            <p>
+                AutoMapper, because writing mappings between database models and view  models is
+                unnecessarily time consuming and prone to human error.
+            </p>
+            <p>
+                Using StructureMap to automatically create the configurations for AutoMapper
+                profiles.
+            </p>
+            <p>
+                SASS to make maintaining and writing CSS more like OOP.
+            </p>
+
+            <h4 class="text-light p-t-1">Modular and pluggable</h4>
+            <p>
+                Some core components have been implemented using interfaces.
+            </p>
+            <p>
+                For example the DbContext is encapsulated in wrapper and the interface
+                of that wrapper is dependency injected into the controllers as a service
+                using StructureMap. This is to enable easy passing of a fake context for
+                testing purposes without the need to touch the database.
+            </p>
+
+            <h4 class="text-light p-t-1">Testable</h4>
+            <p>
+                Quickly testable and created in a way to ensure unit tests are quick and
+                painless to write.
+            </p>
+            <p>
+                Moq is utilised for creation of dummy data. The entities themselves do not
+                need to be duplicated and the data can be injected directly into the test context.
+            </p>
+        </div>
+
+        <div class="p-t-1">
+            <h4 class="text-light">Authentication</h4>
+            <p>
+                Lightweight custom authentication code was opted for. The built in
+                is just too bloated and not flexible enough. Additionally ASP.NET
+                Identity uses GUIDs by default and this can affect DB performance massively
+                when you need to scale.
+            </p>
+            <p>
+                Passwords are stored securely, they are hashed and salted using PBKDF2.
+            </p>
+            <p>
+                A password reset feature based on sending a unique link via e-mail is included.
+            </p>
+        </div>
+
+        <div class="p-t-1">
+            <h4 class="text-light">Other notes</h4>
+            <p>
+                Other than the jQuery and Bootstrap stuff, a front end JavaScript framework has not been included
+                in this template for flexibility of choosing your own / including the latest and greatest.
+            </p>
+        </div>
+
+        <h3 class="m-t-3"><a name="License">License</a></h3>
+        <p>
+            The MIT License (MIT)
+            Copyright &copy; @DateTime.Now.Year Akeel Mughal
+        </p>
+        <div class="text-light">
+            <p>
+                Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+            </p>
+            <p>
+                The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+            </p>
+            <p>
+                THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+            </p>
+        </div>
+    </div>
+</div>

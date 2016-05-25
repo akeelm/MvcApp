@@ -1,0 +1,40 @@
+﻿body {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    background-color: $gray-lighter;
+}
+
+.container-fluid {
+    padding-left: 3.9375rem;
+    padding-right: 3.9375rem;
+}
+
+.body-content {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.body-content > div, footer  {
+    padding-left: 4.9375rem;
+    padding-right: 4.9375rem;
+}
+
+.jumbotron {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+.row {
+    background-color: $gray-lighter;
+}
+
+footer {
+    background-color: $gray-lightest;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    bottom: 0;
+
+    .row {
+        background-color: $gray-lightest;
+    }
+}
